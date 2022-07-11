@@ -31,5 +31,5 @@ export const cls = clean;
 
 export const ft = fonts;
 
-export const build = gulp.series(clean, html, scss, webp, images, scripts, fonts );
+export const build = gulp.series(clean, html, scss, webp, images, scripts, fonts);
 export default gulp.series(clean, html, scss, webp, images, scripts, fonts, gulp.parallel(watch, server));
