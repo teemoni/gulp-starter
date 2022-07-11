@@ -29,5 +29,8 @@ export const webp = () => {
     return app.gulp.src(app.path.app.images)
     .pipe(newer('./dist/images/'))
     .pipe(webpImage())
-    .pipe(app.gulp.dest(app.path.build.images));
+    .pipe(app.gulp.dest(app.path.build.images))
+    .pipe(app.plugin.bSync.stream({
+        once: true
+    }));
 };
