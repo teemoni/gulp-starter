@@ -5,14 +5,14 @@ export const path = {
     app: {
         html: `${appDir}/views/*.html`,
         scss: `${appDir}/scss/style.scss`,
-        images: `${appDir}/images/**/*.{jpg,png,ico}`,
+        images: `${appDir}/images/**/*.{jpg,png,ico,svg}`,
         scripts: `${appDir}/scripts/index.js`,
         fonts: `${appDir}/fonts/*.{woff,woff2}`,
     },
     watch: {
         html: `${appDir}/views/**/*.html`,
         scss: `${appDir}/scss/**/*.scss`,
-        images: `${appDir}/images/**/*.{jpg,png,ico}`,
+        images: `${appDir}/images/**/*.{jpg,png,ico,svg}`,
         scripts: `${appDir}/scripts/**/*.js`,
     },
     build: {
